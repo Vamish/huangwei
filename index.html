@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Smartisan T1 by V.S</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .phone-wrapper {
+            width: 220px;
+            margin: 50px auto;
+            padding: 10px 0 15px;
+            background-color: black;
+            border-radius: 11px;
+            position: relative;
+        }
+
+        .phone-wrapper:before {
+            content: '';
+            width: 1px;
+            height: 50px;
+            border: 2px solid black;
+            display: block;
+            position: absolute;
+            left: -2px;
+            top: 50%;
+            margin-top: -45px;
+        }
+
+        .phone-wrapper:after {
+            content: '';
+            width: 1px;
+            height: 50px;
+            border: 2px solid black;
+            display: block;
+            position: absolute;
+            right: -2px;
+            top: 50%;
+            margin-top: -45px;
+        }
+
+        .phone-screen {
+            width: 200px;
+            height: 340px;
+            margin: 10px auto 20px;
+            background-color: hsla(194, 59%, 69%, 0.16);
+            transition: 300ms all;
+        }
+
+        .phone-screen:hover {
+            background-color: lightyellow;
+        }
+
+        .phone-shangmian {
+            width: 50px;
+            height: 10px;
+            margin: 5px auto 20px;
+        }
+
+        .phone-shexiangtou {
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            margin-right: 5px;
+            background-color: #1F1F1F;
+            display: inline-block;
+        }
+
+        .phone-tingtong {
+            width: 30px;
+            height: 8px;
+            border-radius: 4px;
+            display: inline-block;
+            background-color: #1F1F1F;
+        }
+
+        .phone-bottom-button {
+            width: 152px;
+            height: 8px;
+            margin: 0 auto 5px;
+        }
+
+        .bottom-button {
+            width: 50px;
+            height: 8px;
+            background-color: #1F1F1F;
+            float: left;
+        }
+
+        .bottom-button-left {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border-right: 1px solid black;
+        }
+
+        .bottom-button-right {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            border-left: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div class="phone-wrapper">
+    <div class="phone-shangmian">
+        <div class="phone-shexiangtou"></div>
+        <div class="phone-tingtong"></div>
+    </div>
+    <div class="phone-screen"></div>
+    <div class="phone-bottom-button">
+        <div class="bottom-button bottom-button-left"></div>
+        <div class="bottom-button"></div>
+        <div class="bottom-button bottom-button-right"></div>
+    </div>
+</div>
+</body>
+</html>
